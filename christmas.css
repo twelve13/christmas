@@ -1,0 +1,1023 @@
+#xmas-button {
+  display: block;
+  color: red;
+}
+
+#hnk-button {
+  display: block;
+  color: blue;
+}
+
+main {
+  display: flex;
+  font-family: 'Lobster', cursive;
+  letter-spacing: 0.4em;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+main * {
+  opacity: 0;
+}
+
+.showme {
+  transition: 500ms ease;
+  opacity: 1;
+}
+
+main *, #globe * {
+  position: absolute;
+}
+
+#base {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  justify-content: center;
+  text-align: center;
+  top: 820px;
+  width: 450px;
+  z-index: 1;
+}
+
+#base > div {
+  background-color: #808080;
+  background: linear-gradient(to right, lightgray, #808080);
+  border-radius: 20px;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  position: relative;
+}
+
+#base :nth-child(1) {
+  width: 350px;
+}
+
+#base :nth-child(2) {
+  width: 400px;
+}
+
+#base :nth-child(3) {
+  width: 450px;
+}
+
+#base div p {
+  margin: 0;
+}
+
+#globe {
+  background-color: rgba(255, 255, 255, 0.29);
+  border: solid 2px white;
+  border-radius: 100%;
+  display: flex;
+  height: 720px;
+  justify-content: center;
+  overflow: hidden;
+  top: 140px;
+  width: 720px;
+}
+
+#reflection1 {
+  background-color: rgba(255, 255, 255, 0.55);
+  border-radius: 10px 20px 10px 30px;
+  height: 50px;
+  left: 500px;
+  top: 100px;
+  transform: rotate(20deg);
+  width: 70px;
+}
+
+#reflection2 {
+  background-color: rgba(255, 255, 255, 0.55);
+  border-radius: 15px 10px 40px 20px;
+  height: 30px;
+  left: 450px;
+  top: 55px;
+  transform: rotate(8deg);
+  width: 40px;
+}
+
+#reflection3 {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50px 20px 30px 15px;
+  height: 60px;
+  left: 140px;
+  top: 140px;
+  transform: rotate(30deg);
+  width: 20px;
+}
+
+#reflection4 {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50px 20px 30px 15px;
+  height: 20px;
+  left: 190px;
+  top: 100px;
+  transform: rotate(30deg);
+  width: 20px;
+}
+
+#snow {
+  height: 175px;
+  top: 510px;
+  width: 600px;
+}
+
+#snow-bottom {
+  background-color: #e0f5ff;
+  height: 70%;
+  top: 50px;
+  width: 100%;
+}
+
+#snow-top {
+  background-color: #c7edff;
+  border-radius: 100%;
+  height: 50%;
+  width: 100%;
+}
+
+#xmastree {
+  height: 300px;
+  right: 70px;
+  top: 250px;
+  width: 180px;
+
+}
+
+#tree-section1 {
+  left: 30px;
+}
+
+.pointy {
+  border-bottom: solid #07ab82 90px;
+}
+
+.round-L, .round-R, .round {
+  background-color: #07ab82;
+}
+
+#tree-section1 .pointy {
+  border-left: solid transparent 60px;
+  border-right: solid transparent 60px;
+  height: 0px;
+  width: 0px;
+}
+
+#tree-section1 .round-L {
+  border-radius: 0 0 50px 50px;
+  height: 15px;
+  left: 1.5px;
+  top: 81px;
+  transform: rotate(-20deg);
+  width: 40px;
+}
+
+#tree-section1 .round-R {
+  border-radius: 0 0 50px 50px;
+  height: 15px;
+  left: 78px;
+  top: 81px;
+  transform: rotate(20deg);
+  width: 40px;
+}
+
+#tree-section2 {
+  left: 18px;
+  top: 40px;
+}
+
+#tree-section2 .pointy {
+  border-left: solid transparent 75px;
+  border-right: solid transparent 75px;
+  height: 0px;
+  top: 10px;
+  width: 0px;
+}
+
+#tree-section2 .round-L {
+  border-radius: 0 0 50px 50px;
+  height: 20px;
+  left: 2px;
+  top: 87px;
+  transform: rotate(-20deg);
+  width: 70px;
+}
+
+#tree-section2 .round-R {
+  border-radius: 0 0 50px 50px;
+  height: 20px;
+  left: 77px;
+  top: 87px;
+  transform: rotate(20deg);
+  width: 70px;
+}
+
+#tree-section3 {
+  left: 14px;
+  top: 100px;
+}
+
+#tree-section3 .pointy {
+  border-left: solid transparent 80px;
+  border-right: solid transparent 80px;
+  height: 0px;
+  width: 0px;
+}
+
+#tree-section3 .round-L {
+  border-radius: 0 0 50px 50px;
+  height: 25px;
+  left: 3px;
+  top: 72px;
+  transform: rotate(-20deg);
+  width: 100px;
+}
+
+#tree-section3 .round-R {
+  border-radius: 0 0 50px 50px;
+  height: 25px;
+  left: 60px;
+  top: 72px;
+  transform: rotate(20deg);
+  width: 100px;
+}
+
+#tree-section4 {
+  top: 150px;
+}
+
+#tree-section4 .pointy {
+  border-left: solid transparent 95px;
+  border-right: solid transparent 95px;
+  height: 0px;
+  width: 0px;
+}
+
+#tree-section4 .round {
+  border-radius: 0 0 50px 50px;
+  height: 20px;
+  left: 1px;
+  top: 90px;
+  width: 188px;
+}
+
+#trunk {
+  background-color: #bf7363;
+  height: 50px;
+  left: 80px;
+  top: 260px;
+  width: 30px;
+}
+
+#lights {
+  height: 250px;
+  left: 15px;
+  width: 150px;
+}
+
+#lights div {
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+
+#lights div:nth-of-type(1) {
+  background-color: #ff6161;
+  left: 70px;
+  top: 25px;
+}
+
+#lights div:nth-of-type(2) {
+  background-color: orange;
+  left: 50px;
+  top: 45px;      
+}
+
+#lights div:nth-of-type(3) {
+  background-color: yellow;
+  left: 80px;
+  top: 65px;
+}
+
+#lights div:nth-of-type(4) {
+  background-color: #2dcd55;
+  left: 35px;
+  top: 105px;
+}
+
+#lights div:nth-of-type(5) {
+  background-color: #ff6161;
+  left: 90px;
+  top: 115px;
+}
+
+#lights div:nth-of-type(6) {
+  background-color: orange;
+  left: 50px;
+  top: 145px;
+}
+
+#lights div:nth-of-type(7) {
+  background-color: yellow;
+  left: 80px;
+  top: 165px;
+}
+
+#lights div:nth-of-type(8) {
+  background-color: #2dcd55;
+  left: 125px;
+  top: 175px;
+}
+
+#lights div:nth-of-type(9) {
+  background-color: #ff6161;
+  left: 105px;
+  top: 205px;
+}
+
+#lights div:nth-of-type(10) {
+  background-color: orange;
+  left: 70px;
+  top: 212px;
+}
+
+#lights div:nth-of-type(11) {
+  background-color: yellow;
+  left: 15px;
+  top: 185px;
+}
+
+#lights div:nth-of-type(12) {
+  background-color: #2dcd55;
+  left: 15px;
+  top: 235px;
+}
+
+.head {
+  background-color: #edd8d4;
+  border-radius: 50%;
+}
+
+#angel {
+  height: 70px;
+  left: 70px;
+  top: -55px;
+  width: 40px;
+}
+
+#angel .head {
+  height: 25px;
+  left: 7px;
+  top: 15px;
+  width: 25px;
+  z-index: 2;
+}
+
+#angel .body {
+  border-bottom: solid white 40px;
+  border-left: solid transparent 15px;
+  border-right: solid transparent 15px;
+  height: 0px;
+  left: 5px;
+  top: 31px;
+  width: 0px;
+}
+
+#wing-L {
+  background-color: white;
+  border-radius: 20px 20px 0 0;
+  height: 20px;
+  top: 40px;
+  transform: rotate(30deg);
+  width: 10px;      
+}
+
+#wing-R {
+  background-color: white;
+  border-radius: 20px 20px 0 0;
+  height: 20px;
+  left: 30px;
+  top: 40px;
+  transform: rotate(-30deg);
+  width: 10px;      
+}
+
+#halo-outer {
+  background-color: white;
+  border-radius: 50%;
+  height: 12px;
+  left: 2px;
+  width: 35px;
+}
+
+#halo-inner {
+  background-color: #3dffe8;
+  border-radius: 50%;
+  height: 4px;
+  left: 8px;
+  top: 4px;
+  width: 22px;
+}
+
+#house {
+  height: 220px;
+  left: 80px;
+  top: 330px;
+  width: 255px;
+}
+
+#side {
+  height: 50%;
+  top: 50%;
+  transform: rotate(5deg) skew(5deg);
+  width: 50%;
+}
+
+#side .log {
+  background-color: #bf7363;
+  background: linear-gradient(#bf7363, #90574c);
+  border-radius: 20px;
+  height: 25%;
+  position: relative;
+  width: 100%;
+}
+
+#front {
+  height: 87.5%;
+  left: 47%;
+  top: 13.2%;
+  transform: rotate(-5deg) skew(-5deg);
+  width: 40%;
+  z-index: 2;
+}
+
+#front .log {
+  background-color: #bf7363;
+  background: linear-gradient(#bf7363, #90574c);
+  border-radius: 20px;
+  height: 14.25%;
+  position: relative;
+  width: 100%;
+}
+
+#front .log:nth-of-type(1) {
+  left: 30%;
+  width: 40%;
+}
+
+#front .log:nth-of-type(2) {
+  left: 20%;
+  width: 60%;
+}
+
+#front .log:nth-of-type(3) {
+  left: 10%;
+  width: 80%;
+}
+
+#roof-main {
+  background-color: #fafdff;
+  height: 45%;
+  left: 3.33%;
+  top: 6%;
+  transform: rotate(4deg) skew(-20deg);
+  width: 60%;
+  z-index: 3;
+}
+
+#roof-edge {
+  background-color: #f0faff;
+  border-top: solid 1px #c7edff;
+  height: 4.8%;
+  left: -4.8%;
+  top: 49.7%;
+  transform: rotate(5deg);
+  width: 60%;
+  z-index: 3;
+}
+
+#roof-back {
+  background-color: #f0faff;
+  border-right: solid 1px #c7edff;
+  height: 46%;
+  left: 67%;
+  top: 9%;
+  transform: rotate(-5deg) skew(20deg);
+  width: 15%;
+  z-index: 1;
+}
+
+#chimney-front {
+  background-color: #ff6161;
+  height: 20%;
+  left: 17%;
+  top: -10%;
+  transform: rotate(5deg) skew(5deg);
+  width: 7%;
+  z-index: 3;
+}
+
+#chimney-side {
+  background-color: #ff6161;
+  height: 21%;
+  left: 24%;
+  top: -12%;
+  transform: rotate(-18deg) skew(-18deg);
+  width: 5%;
+  z-index: 3;
+}
+
+#chimney-top {
+  background-color: gray;
+  height: 7%;
+  left: 19.5%;
+  top: -16%;
+  transform: rotate(10deg) skew(-40deg);
+  width: 7%;
+  z-index: 3;
+}
+
+#door {
+  background-color: #ff6161;
+  border-radius: 50px 50px 0 0 ;
+  height: 45%;
+  left: 62%;
+  top: 55%;
+  transform: rotate(-5deg) skew(-5deg);
+  width: 15%;
+  z-index: 3;
+}
+
+#knob {
+  background-color: gray;
+  border-radius: 50%;
+  height: 12%;
+  left: 60%;
+  top: 50%;
+  width: 20%;
+}
+
+#window {
+  background-color: #ffdc2e;
+  border: solid 2px orange;
+  height: 15%;
+  left: 10%;
+  top: 65%;
+  transform: rotate(5deg) skew(5deg);
+  width: 26%;
+}
+
+#house-lights-side {
+  display: flex;
+  height: 10px;
+  justify-content: space-around;
+  left: -6%;
+  top: 55%;
+  transform: rotate(5deg);
+  width: 60%;
+  z-index: 3;
+}
+
+#house-lights-side div, #house-lights-front-left div, #house-lights-front-right div {
+  border-radius: 50%;
+  height: 100%;
+  position: relative;
+  width: 7%;
+}
+
+#house-lights-front-left {
+  display: flex;
+  height: 10px;
+  justify-content: space-around;
+  left: 45%;
+  top: 39%;
+  transform: rotate(-67deg);
+  width: 35%;
+  z-index: 3;
+}
+
+#house-lights-front-left div {
+  height: 100%;
+  width: 12%;
+}
+
+#house-lights-front-right {
+  display: flex;
+  height: 10px;
+  justify-content: space-around;
+  left: 58%;
+  top: 34%;
+  transform: rotate(67deg);
+  width: 38%;
+  z-index: 3;
+}
+
+#house-lights-front-right div {
+  height: 100%;
+  width: 12%;
+}
+
+.house-lights div:nth-of-type(1), .house-lights div:nth-of-type(5) {
+  background-color: #ff6161;
+}
+
+.house-lights div:nth-of-type(2), .house-lights div:nth-of-type(6) {
+  background-color: orange;
+}
+
+.house-lights div:nth-of-type(3), .house-lights div:nth-of-type(7) {
+  background-color: yellow;
+}
+
+.house-lights div:nth-of-type(4), .house-lights div:nth-of-type(8) {
+  background-color: #2dcd55;
+}
+
+#santa .head, #mrs-clause .head {
+  height: 30%;
+  left: 25%;
+  top: 25%;
+  width: 50%;
+  z-index: 2;
+}
+
+.eye {
+  border-radius: 50% 50% 0 0;
+  border-top: solid 3px gray;
+  height: 20%;
+  top: 34%;
+  width: 20%;
+}
+
+.eye1 {
+  left: 25%;
+}
+
+.eye2 {
+  left: 55%;
+}
+
+#santa {
+  height: 120px;
+  left: 310px;
+  top: 430px;
+  width: 75px;
+}
+
+.torso {
+  background-color: #ff6161;
+  border-radius: 50%;
+  height: 50%;
+  left: 16%;
+  top: 50%;
+  width: 66.6%;
+}
+
+#beard {
+  background-color: white;
+  border-radius: 0 0 60px 60px;
+  height: 17%;
+  left: 27%;
+  top: 44%;
+  width: 48%;
+  z-index: 3;
+}
+
+#hat {
+  border-bottom: solid #ff6161 40px;
+  border-left: solid transparent 18px;
+  border-right: solid transparent 18px;
+  height: 0px;
+  left: 25%;
+  width: 0px;
+  z-index: 3;
+}
+
+#pompom {
+  background-color: white;
+  border-radius: 50%;
+  height: 10%;
+  left: 43%;
+  width: 15%;
+  z-index: 3;
+}
+
+#santa-clothing1 {
+  background-color: white;
+  height: 17%;
+  left: 45%;
+  top: 65%;
+  width: 9%;
+}
+
+#santa-clothing2 {
+  background-color: gray;
+  height: 5%;
+  left: 30%;
+  top: 80%;
+  width: 42%;
+}
+
+#mrs-clause {
+  height: 120px;
+  left: 370px;
+  top: 430px;
+  width: 80px;
+}
+
+#hair-left {
+  background-color: white;
+  border-radius: 60%;
+  height: 12%;
+  left: 25%;
+  top: 21%;
+  transform: rotate(-15deg);
+  width: 32%;
+  z-index: 3;
+}
+
+#hair-right {
+  background-color: white;
+  border-radius: 60%;
+  height: 11%;
+  left: 37%;
+  top: 22%;
+  transform: rotate(10deg);
+  width: 35%;
+  z-index: 3;
+}
+
+#bun {
+  background-color: white;
+  border-bottom: solid 1px gray;
+  border-radius: 50%;
+  height: 7%;
+  left: 46%;
+  top: 13%;
+  transform: rotate(4deg);
+  width: 16%;
+  z-index: 3;
+}
+
+.mouth {
+  border-bottom: solid 2px red;
+  border-radius: 50%;
+  height: 10%;
+  left: 40%;
+  top: 60%;
+  width: 20%;
+}
+
+#mrs-clothing1 {
+  border-left: solid 4px white;
+  border-right: solid 4px white;
+  height: 10%;
+  left: 36%;
+  top: 55%;
+  width: 16%;
+}
+
+#mrs-clothing2 {
+  background-color: white;
+  border-radius: 20px 20px 0 0;
+  height: 25%;
+  left: 30%;
+  top: 61%;
+  width: 39%;
+}
+
+.present {
+  height: 40px;
+  left: 490px;
+  top: 520px;
+  width: 50px;
+}
+
+.box {
+  background-color: #ff6161;
+  height: 70%;
+  top: 27%;
+  width: 100%;
+}
+
+.ribbon1 {
+  background-color: white;
+  height: 5px;
+  top: 22px;
+  width: 50px;
+}
+
+.ribbon2 {
+  background-color: white;
+  height: 30px;
+  left: 22px;
+  top: 10px;
+  width: 5px;
+}
+
+.bow-L {
+  background-color: white;
+  border: solid 1px gray;
+  border-radius: 50%;
+  height: 20%;
+  transform: rotate(10deg);
+  width: 50%;
+}
+
+.bow-R {
+  background-color: white;
+  border: solid 1px gray;
+  border-radius: 50%;
+  height: 20%;
+  left: 50%;
+  transform: rotate(-10deg);
+  width: 50%;
+}
+
+#menorah {
+  border: solid 1px black;
+  height: 50px;
+  left: 122px;
+  top: 440px;
+  transform: rotate(5deg) skew(5deg);
+  width: 100px;
+  z-index: 4;
+}
+
+#base-vert {
+  background-color: black;
+  height: 60%;
+  left: 45%;
+  top: 20%;
+  width: 5%;
+}
+
+#base-horz {
+  background-color: black;
+  height: 7%;
+  left: 30%;
+  top: 80%;
+  width: 35%;
+}
+
+#arm1 {
+  border-left: solid 3px black;
+  border-right: solid 3px black;
+  border-radius: 0 0 50% 50%;
+  height: 25%;
+  left: 35%;
+  top: 20%;
+  width: 20%;
+}
+
+ 
+
+#arm2 {
+  border-left: solid 3px black;
+  border-right: solid 3px black;
+  border-radius: 0 0 50% 50%;
+  height: 30%;
+  left: 25%;
+  top: 20%;
+  width: 40%;
+}
+
+#arm3 {
+  border-left: solid 3px black;
+  border-right: solid 3px black;
+  border-radius: 0 0 50% 50%;
+  height: 35%;
+  left: 18%;
+  top: 20%;
+  width: 55%;
+}
+
+#arm4 {
+  border-left: solid 3px black;
+  border-right: solid 3px black;
+  border-radius: 0 0 50% 50%;
+  height: 40%;
+  left: 10%;
+  top: 20%;
+  width: 75%;
+}
+
+.snow {
+  height: 300px;
+  top: 50px;
+  width: 300px;
+}
+
+.snow div {
+  background-color: white;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+}
+
+#snow19 {
+  left: 50px;
+  top: 20px;
+}
+
+#snow1 {
+  left: -10px;
+  top: 80px;
+}
+
+#snow6 {
+  left: -80px;
+  top: 100px;
+}
+
+#snow3 {
+  left: 10px;
+  top: 150px;
+}
+
+#snow2 {
+  left: -10px;
+  top: 180px;
+}
+
+#snow16 {
+  left: 150px;
+  top: 30px;
+}
+
+#snow8 {
+  left: 250px;
+  top: 80px;
+}
+
+#snow7 {
+  left: 200px;
+  top: 100px;
+}
+
+#snow4 {
+  left: -120px;
+  top: 250px;
+}
+
+ #snow17 {
+  left: 100px;
+  top: 300px;
+}
+
+#snow5 {
+  left: 160px;
+  top: 200px;
+}
+
+#snow11 {
+  left: 70px;
+  top: 250px;
+} 
+
+#snow18 {
+  left: 200px;
+  top: 272px;
+}
+
+#snow9 {
+  left: 170px;
+  top: 320px;
+}
+
+#snow12 {
+  left: 220px;
+  top: 360px;
+}
+
+#snow20 {
+  left: 55px;
+  top: 100px;
+}
+
+#snow13 {
+  left: 90px;
+  top: 140px;
+}
+
+#snow10 {
+  left: 270px;
+  top: 180px;
+}
+
+#snow14 {
+  left: 60px;
+  top: -10px;
+}
+
+#snow15 {
+  left: 440px;
+  top: 250px;
+}
+
+
+ 
