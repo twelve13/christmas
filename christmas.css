@@ -1,3 +1,7 @@
+body {
+  background-color: #e6e5e5;
+}
+
 #gingy {
   height: 300px;
   left: 200px;
@@ -6,13 +10,63 @@
   width: 300px;
 }
 
+#gingy div {
+  position: relative;
+}
+
 #g-head {
   background-color: #b35c4d;
   border-radius: 50%;
   height: 35%;
   left: 50px;
-  position: relative;
   width: 35%;
+}
+
+#g-eyebrow-l {
+  border-top: solid 5px #70eeff;
+  border-radius: 40%;
+  height: 20px;
+  left: 25px;
+  top: 22px;
+  transform: rotate(-7deg);
+  width: 25px;
+}
+
+#g-eye-l {
+  background-color: white;
+  border-radius: 40%;
+  height: 12px;
+  left: 30px;
+  top: 13px;
+  width: 12px;
+}
+
+#g-eyebrow-r {
+  border-top: solid 5px #70eeff;
+  border-radius: 40%;
+  height: 20px;
+  left: 58px;
+  top: -13px;
+  transform: rotate(9deg);
+  width: 25px;
+}
+
+#g-eye-r {
+  background-color: white;
+  border-radius: 40%;
+  height: 12px;
+  left: 66px;
+  top: -22px;
+  width: 12px;
+}
+
+#g-mouth {
+  border: solid 4px #f87aff;
+  border-radius: 25px 25px 50px 50px;
+  height: 10px;
+  left: 42px;
+  top: -12px;
+  width: 20px;
 }
 
 #g-body {
@@ -20,9 +74,26 @@
   border-radius: 50%;
   height: 30%;
   left: 65px;
-  position: relative;
   top: -20px;
   width: 25%;
+}
+
+.g-button {
+  background-color: #70eeff;
+  border-radius: 50%;
+  height: 12px;
+  left: 35px;
+  top: 22px;
+  width: 12px;
+  z-index: 3;
+}
+
+.g-button:nth-of-type(2) {
+  top: 30px;
+}
+
+.g-button:nth-of-type(2) {
+  top: 50px;
 }
 
 #g-arm-l {
@@ -30,7 +101,6 @@
   border-radius: 40%;
   height: 30%;
   left: 45px;
-  position: relative;
   top: -100px;
   transform: rotate(25deg);
   width: 10%;
@@ -41,7 +111,6 @@
   border-radius: 40%;
   height: 30%;
   left: 130px;
-  position: relative;
   top: -190px;
   transform: rotate(-25deg);
   width: 10%;
@@ -52,7 +121,6 @@
   border-radius: 40%;
   height: 37%;
   left: 65px;
-  position: relative;
   top: -240px;
   transform: rotate(5deg);
   width: 13%;
@@ -63,7 +131,6 @@
   border-radius: 40%;
   height: 37%;
   left: 105px;
-  position: relative;
   top: -350px;
   transform: rotate(-5deg);
   width: 13%;
@@ -75,7 +142,6 @@
   border-right: solid transparent 18px;
   height: 0px;
   left: 170px;
-  position: relative;
   top: -550px;
   width: 0px;
 }
@@ -88,7 +154,6 @@
   font-size: 24px;
   height: 70px;
   left: 200px;
-  position: relative;
   top: -630px;
   width: 100px;
 }
@@ -99,13 +164,18 @@
 }
 
 #xmas-button {
-  border: solid 5px red;  
+  border: solid 5px #ff7ab6;  
   border-radius: 10%;   
   height: 200px;
   left: 800px;
   position: relative;
   top: -200px;
   width: 200px;
+  z-index: 5;
+}
+
+#xmas-button:hover {
+  cursor: pointer;
 }
 
 #xmas-button div {
@@ -117,17 +187,22 @@
 }
 
 #hnk-button {
-  border: solid 5px blue;  
+  border: solid 5px #70d2ff;  
   border-radius: 10%;
   height: 200px;
   left: 800px;
   position: relative;
   top: -100px;
   width: 200px;
+  z-index: 5;
+}
+
+#hnk-button:hover {
+  cursor: pointer;
 }
 
 .d-handle {
-  background-color: blue;
+  background-color: #70d2ff;
   border-radius: 50% 50% 0 0;
   height: 40px;
   left: 102px;
@@ -148,7 +223,7 @@
 }
 
 .d-body {
-  background-color: blue;
+  background-color: #70d2ff;
   border-radius: 0 0 100% 100%;
   height: 80px;
   left: 60px;
@@ -826,9 +901,13 @@ main *, #globe * {
 
 #santa-icon {
   height: 175px;
-  left: 15%;
+  left: 17%;
   top: 3%;
   width: 125px;
+}
+
+#santa-icon .torso {
+  background-color: #ff7ab6;
 }
 
 .torso {
@@ -861,7 +940,7 @@ main *, #globe * {
 }
 
 .hat2 {
-  border-bottom: solid #ff6161 55px;
+  border-bottom: solid #ff7ab6 55px;
   border-left: solid transparent 27px;
   border-right: solid transparent 27px;
   height: 0px;

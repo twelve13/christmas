@@ -4,7 +4,7 @@ const hnkButton = document.getElementById("hnk-button");
 const xmas = document.querySelectorAll(".xmas");
 const hnk = document.querySelectorAll(".hnk");
 const divs = document.getElementsByTagName("div");
-const main = document.getElementById("main");
+const body = document.getElementById("body");
 const blue = document.querySelectorAll(".blue");
 const gold = document.querySelectorAll(".gold");
 const house = document.getElementById("house");
@@ -18,7 +18,7 @@ function showXmas() {
 
   hnkButton.remove();
 
-  main.style.backgroundColor = "#3dffe8";
+  body.style.backgroundColor = "#3dffe8";
  
   hnk.forEach(function(item){
     item.remove();
@@ -53,7 +53,7 @@ function showHnk() {
 
   hnkButton.remove();
   
-  main.style.backgroundColor = "#0048ff";
+  body.style.backgroundColor = "#0048ff";
  
   xmas.forEach(function(item){
     item.remove();
