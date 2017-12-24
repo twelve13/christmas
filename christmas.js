@@ -1,3 +1,4 @@
+const gingerbread = document.getElementById("gingy");
 const xmasButton = document.getElementById("xmas-button");
 const hnkButton = document.getElementById("hnk-button");
 const xmas = document.querySelectorAll(".xmas");
@@ -7,29 +8,56 @@ const main = document.getElementById("main");
 const blue = document.querySelectorAll(".blue");
 const gold = document.querySelectorAll(".gold");
 const house = document.getElementById("house");
+const snowflakes = document.querySelectorAll(".snowflake");
  
 function showXmas() {
-  console.log("Christmas selected");
- 
+
+  gingerbread.remove();
+
+  xmasButton.remove();
+
+  hnkButton.remove();
+
   main.style.backgroundColor = "#3dffe8";
  
   hnk.forEach(function(item){
-    item.style.display = "none"});
+    item.remove();
+  });
  
-    for(let i=0; i<divs.length; i++){
-      setTimeout(
-        function(){
-          divs[i].classList.add("showme")},i*200);
-    };
+  for(let i=0; i<divs.length; i++){
+    setTimeout(
+      function(){
+        divs[i].classList.add("showme")},i*200);
   };
+  
+  
+  function snowfall(){
+        for(let i=0; i<snowflakes.length; i++){
+
+        setTimeout(
+          function(){
+                snowflakes[i].style.top = "520px"}, i*400);
+        }
+  }
+
+  setTimeout(snowfall, 30000);
+  
+  
+};
  
 function showHnk() {
-  console.log("Hanukkah selected");
+
+  gingerbread.remove();
  
+  xmasButton.remove();
+
+  hnkButton.remove();
+  
   main.style.backgroundColor = "#0048ff";
  
   xmas.forEach(function(item){
-    item.style.display = "none"});
+    item.remove();
+});
  
     blue.forEach(function(light){
       light.style.backgroundColor = "blue";
@@ -48,6 +76,17 @@ function showHnk() {
         function(){
           divs[i].classList.add("showme")},i*200);
     };
+
+    function snowfall(){
+        for(let i=0; i<snowflakes.length; i++){
+
+        setTimeout(
+          function(){
+                snowflakes[i].style.top = "515px"}, i*400);
+        }
+  }
+
+  setTimeout(snowfall, 30000);
 };
  
 xmasButton.addEventListener("click", showXmas);

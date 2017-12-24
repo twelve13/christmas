@@ -1,11 +1,167 @@
+#gingy {
+  height: 300px;
+  left: 200px;
+  position: relative;
+  top: 250px;
+  width: 300px;
+}
+
+#g-head {
+  background-color: #b35c4d;
+  border-radius: 50%;
+  height: 35%;
+  left: 50px;
+  position: relative;
+  width: 35%;
+}
+
+#g-body {
+  background-color: #b35c4d;
+  border-radius: 50%;
+  height: 30%;
+  left: 65px;
+  position: relative;
+  top: -20px;
+  width: 25%;
+}
+
+#g-arm-l {
+  background-color: #b35c4d;
+  border-radius: 40%;
+  height: 30%;
+  left: 45px;
+  position: relative;
+  top: -100px;
+  transform: rotate(25deg);
+  width: 10%;
+}
+
+#g-arm-r {
+  background-color: #b35c4d;
+  border-radius: 40%;
+  height: 30%;
+  left: 130px;
+  position: relative;
+  top: -190px;
+  transform: rotate(-25deg);
+  width: 10%;
+}
+
+#g-leg-l {
+  background-color: #b35c4d;
+  border-radius: 40%;
+  height: 37%;
+  left: 65px;
+  position: relative;
+  top: -240px;
+  transform: rotate(5deg);
+  width: 13%;
+}
+
+#g-leg-r {
+  background-color: #b35c4d;
+  border-radius: 40%;
+  height: 37%;
+  left: 105px;
+  position: relative;
+  top: -350px;
+  transform: rotate(-5deg);
+  width: 13%;
+}
+
+#bubble-corner {
+  border-bottom: solid black 30px;
+  border-left: solid transparent 40px;
+  border-right: solid transparent 18px;
+  height: 0px;
+  left: 170px;
+  position: relative;
+  top: -550px;
+  width: 0px;
+}
+
+#bubble {
+  background-color: black;
+  border-radius: 100%;
+  box-sizing: border-box;
+  color: white;
+  font-size: 24px;
+  height: 70px;
+  left: 200px;
+  position: relative;
+  top: -630px;
+  width: 100px;
+}
+
+#bubble p {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+
 #xmas-button {
-  display: block;
-  color: red;
+  border: solid 5px red;  
+  border-radius: 10%;   
+  height: 200px;
+  left: 800px;
+  position: relative;
+  top: -200px;
+  width: 200px;
+}
+
+#xmas-button div {
+  position: absolute;
+}
+
+#hnk-button div {
+  position: relative;
 }
 
 #hnk-button {
-  display: block;
-  color: blue;
+  border: solid 5px blue;  
+  border-radius: 10%;
+  height: 200px;
+  left: 800px;
+  position: relative;
+  top: -100px;
+  width: 200px;
+}
+
+.d-handle {
+  background-color: blue;
+  border-radius: 50% 50% 0 0;
+  height: 40px;
+  left: 102px;
+  top: 40px;
+  transform: rotate(20deg);
+  width: 15px;
+  z-index: 3;
+}
+
+.d-top {
+  background-color: #0091ff;
+  height: 30px;
+  left: 85px;
+  top: 26px;
+  transform: rotate(48.5deg) skew(-30deg);
+  width: 38px;
+  z-index: 2;
+}
+
+.d-body {
+  background-color: blue;
+  border-radius: 0 0 100% 100%;
+  height: 80px;
+  left: 60px;
+  top: 10px;
+  transform: rotate(20deg);
+  width: 60px;
+}
+
+.edge {
+  border-right: solid 2px #0091ff;
+  height: 60px;
+  top: 10px;
+  width: 30px;
 }
 
 main {
@@ -37,7 +193,7 @@ main *, #globe * {
   font-size: 30px;
   justify-content: center;
   text-align: center;
-  top: 820px;
+  top: 705px;
   width: 450px;
   z-index: 1;
 }
@@ -76,7 +232,7 @@ main *, #globe * {
   height: 720px;
   justify-content: center;
   overflow: hidden;
-  top: 140px;
+  top: 25px;
   width: 720px;
 }
 
@@ -493,10 +649,10 @@ main *, #globe * {
   background-color: #f0faff;
   border-top: solid 1px #c7edff;
   height: 4.8%;
-  left: -4.8%;
+  left: -4.7%;
   top: 49.7%;
   transform: rotate(5deg);
-  width: 60%;
+  width: 59.8%;
   z-index: 3;
 }
 
@@ -524,7 +680,7 @@ main *, #globe * {
 #chimney-side {
   background-color: #ff6161;
   height: 21%;
-  left: 24%;
+  left: 23.9%;
   top: -12%;
   transform: rotate(-18deg) skew(-18deg);
   width: 5%;
@@ -533,9 +689,9 @@ main *, #globe * {
 
 #chimney-top {
   background-color: gray;
-  height: 7%;
+  height: 6.5%;
   left: 19.5%;
-  top: -16%;
+  top: -15.5%;
   transform: rotate(10deg) skew(-40deg);
   width: 7%;
   z-index: 3;
@@ -637,7 +793,7 @@ main *, #globe * {
   background-color: #2dcd55;
 }
 
-#santa .head, #mrs-clause .head {
+#santa .head, #mrs-clause .head, #santa-icon .head {
   height: 30%;
   left: 25%;
   top: 25%;
@@ -668,6 +824,13 @@ main *, #globe * {
   width: 75px;
 }
 
+#santa-icon {
+  height: 175px;
+  left: 15%;
+  top: 3%;
+  width: 125px;
+}
+
 .torso {
   background-color: #ff6161;
   border-radius: 50%;
@@ -677,17 +840,17 @@ main *, #globe * {
   width: 66.6%;
 }
 
-#beard {
+.beard {
   background-color: white;
   border-radius: 0 0 60px 60px;
   height: 17%;
-  left: 27%;
+  left: 26.5%;
   top: 44%;
   width: 48%;
   z-index: 3;
 }
 
-#hat {
+.hat {
   border-bottom: solid #ff6161 40px;
   border-left: solid transparent 18px;
   border-right: solid transparent 18px;
@@ -697,7 +860,17 @@ main *, #globe * {
   z-index: 3;
 }
 
-#pompom {
+.hat2 {
+  border-bottom: solid #ff6161 55px;
+  border-left: solid transparent 27px;
+  border-right: solid transparent 27px;
+  height: 0px;
+  left: 29%;
+  width: 0px;
+  z-index: 3;
+}
+
+.pompom {
   background-color: white;
   border-radius: 50%;
   height: 10%;
@@ -706,7 +879,7 @@ main *, #globe * {
   z-index: 3;
 }
 
-#santa-clothing1 {
+.santa-clothing1 {
   background-color: white;
   height: 17%;
   left: 45%;
@@ -714,7 +887,7 @@ main *, #globe * {
   width: 9%;
 }
 
-#santa-clothing2 {
+.santa-clothing2 {
   background-color: gray;
   height: 5%;
   left: 30%;
@@ -839,7 +1012,6 @@ main *, #globe * {
 }
 
 #menorah {
-  border: solid 1px black;
   height: 50px;
   left: 122px;
   top: 440px;
@@ -874,8 +1046,6 @@ main *, #globe * {
   width: 20%;
 }
 
- 
-
 #arm2 {
   border-left: solid 3px black;
   border-right: solid 3px black;
@@ -906,6 +1076,22 @@ main *, #globe * {
   width: 75%;
 }
 
+#mlights {
+  display: flex;
+  height: 13%;
+  justify-content: space-between;
+  left: 7%;
+  width: 84%;
+}
+
+#mlights div {
+  background-color: orange;
+  border-radius: 70px 70px 30px 30px;
+  height: 100%;
+  position: relative;
+  width: 8%;
+}
+
 .snow {
   height: 300px;
   top: 50px;
@@ -930,7 +1116,7 @@ main *, #globe * {
 }
 
 #snow6 {
-  left: -80px;
+  left: -95px;
   top: 100px;
 }
 
@@ -941,7 +1127,7 @@ main *, #globe * {
 
 #snow2 {
   left: -10px;
-  top: 180px;
+  top: 170px;
 }
 
 #snow16 {
@@ -960,8 +1146,8 @@ main *, #globe * {
 }
 
 #snow4 {
-  left: -120px;
-  top: 250px;
+  left: 390px;
+  top: 230px;
 }
 
  #snow17 {
@@ -970,7 +1156,7 @@ main *, #globe * {
 }
 
 #snow5 {
-  left: 160px;
+  left: 180px;
   top: 200px;
 }
 
@@ -980,7 +1166,7 @@ main *, #globe * {
 } 
 
 #snow18 {
-  left: 200px;
+  left: 220px;
   top: 272px;
 }
 
@@ -1018,6 +1204,18 @@ main *, #globe * {
   left: 440px;
   top: 250px;
 }
+
+#signature {
+  color: white;
+  font-family: 'Lobster', cursive;
+  font-size: 24px;
+  left: 1100px;
+  letter-spacing: 2px;
+  top: 650px;
+  transform: rotate(-15deg);
+}
+
+
 
 
  
