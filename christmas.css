@@ -1285,11 +1285,11 @@ main *, #globe * {
 }
 
 #signature {
+  align-self: flex-end;
   color: white;
-  font-family: 'Lobster', cursive;
   font-size: 24px;
-  left: 1100px;
   letter-spacing: 2px;
+  right: 50px;
   top: 650px;
   transform: rotate(-15deg);
 }

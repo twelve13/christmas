@@ -36,7 +36,7 @@ function showXmas() {
 
         setTimeout(
           function(){
-                snowflakes[i].style.top = "520px"}, i*400);
+                snowflakes[i].style.top = "515px"}, i*400);
         }
   }
 
